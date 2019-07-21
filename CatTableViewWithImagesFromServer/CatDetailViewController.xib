@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatDetailViewController" customModule="CitiesTableViewWithImages" customModuleProvider="target">
+            <connections>
+                <outlet property="catImageView" destination="9kH-VL-Ej7" id="VI3-uc-RKm"/>
+                <outlet property="catNameLabel" destination="BtV-9B-fup" id="PNF-sZ-yl3"/>
+                <outlet property="view" destination="RAy-hg-dDm" id="ioY-t7-hte"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="RAy-hg-dDm">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9kH-VL-Ej7" customClass="CustomImageView" customModule="CitiesTableViewWithImages" customModuleProvider="target">
+                    <rect key="frame" x="20" y="101" width="335" height="274"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="274" id="dXi-jB-8WU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtV-9B-fup">
+                    <rect key="frame" x="20" y="40" width="335" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Geru8" translatesAutoresizingMaskIntoConstraints="NO" id="uRs-FN-LPb" customClass="CustomImageView" customModule="CitiesTableViewWithImages" customModuleProvider="target">
+                    <rect key="frame" x="20" y="436" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="AB9-Bf-rKE"/>
+                        <constraint firstAttribute="width" constant="100" id="ag5-Ia-CbF"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Geru14" translatesAutoresizingMaskIntoConstraints="NO" id="Siq-Of-Uzd" customClass="CustomImageView" customModule="CitiesTableViewWithImages" customModuleProvider="target">
+                    <rect key="frame" x="137" y="436.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Eix-yz-knu"/>
+                        <constraint firstAttribute="width" constant="100" id="Gsc-Tg-goH"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Geru022" translatesAutoresizingMaskIntoConstraints="NO" id="RnN-wF-7wR" customClass="CustomImageView" customModule="CitiesTableViewWithImages" customModuleProvider="target">
+                    <rect key="frame" x="255" y="436.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="RFb-KP-2v1"/>
+                        <constraint firstAttribute="height" constant="100" id="gYt-lT-htM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related Pics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqz-pd-cFK">
+                    <rect key="frame" x="20" y="395" width="101" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BtV-9B-fup" firstAttribute="leading" secondItem="ddO-zV-tCW" secondAttribute="leading" constant="20" id="3vy-Wo-ZKD"/>
+                <constraint firstItem="uRs-FN-LPb" firstAttribute="top" secondItem="dqz-pd-cFK" secondAttribute="bottom" constant="20" id="5br-s3-AvO"/>
+                <constraint firstItem="BtV-9B-fup" firstAttribute="centerX" secondItem="RAy-hg-dDm" secondAttribute="centerX" id="Enj-i2-xdT"/>
+                <constraint firstItem="RnN-wF-7wR" firstAttribute="top" secondItem="9kH-VL-Ej7" secondAttribute="bottom" constant="61.5" id="Fbq-Mb-ZbB"/>
+                <constraint firstItem="ddO-zV-tCW" firstAttribute="trailing" secondItem="BtV-9B-fup" secondAttribute="trailing" constant="20" id="InD-i4-0TY"/>
+                <constraint firstItem="Siq-Of-Uzd" firstAttribute="top" secondItem="9kH-VL-Ej7" secondAttribute="bottom" constant="61.5" id="JP0-Gb-gzn"/>
+                <constraint firstItem="RnN-wF-7wR" firstAttribute="leading" secondItem="Siq-Of-Uzd" secondAttribute="trailing" constant="18" id="Odc-Qt-qOC"/>
+                <constraint firstItem="9kH-VL-Ej7" firstAttribute="centerX" secondItem="RAy-hg-dDm" secondAttribute="centerX" id="VwC-wu-BUg"/>
+                <constraint firstItem="9kH-VL-Ej7" firstAttribute="top" secondItem="BtV-9B-fup" secondAttribute="bottom" constant="40" id="XGF-MV-m61"/>
+                <constraint firstItem="dqz-pd-cFK" firstAttribute="top" secondItem="9kH-VL-Ej7" secondAttribute="bottom" constant="20" id="aht-Gb-Ov8"/>
+                <constraint firstItem="uRs-FN-LPb" firstAttribute="leading" secondItem="ddO-zV-tCW" secondAttribute="leading" constant="20" id="bQP-WP-aBE"/>
+                <constraint firstItem="Siq-Of-Uzd" firstAttribute="leading" secondItem="uRs-FN-LPb" secondAttribute="trailing" constant="17" id="hdU-cy-SgH"/>
+                <constraint firstItem="ddO-zV-tCW" firstAttribute="trailing" secondItem="9kH-VL-Ej7" secondAttribute="trailing" constant="20" id="nuX-X9-ZhT"/>
+                <constraint firstItem="uRs-FN-LPb" firstAttribute="top" secondItem="dqz-pd-cFK" secondAttribute="bottom" constant="20" id="r0v-lj-ar5"/>
+                <constraint firstItem="9kH-VL-Ej7" firstAttribute="leading" secondItem="ddO-zV-tCW" secondAttribute="leading" constant="20" id="snB-Yd-NIc"/>
+                <constraint firstItem="RnN-wF-7wR" firstAttribute="leading" secondItem="Siq-Of-Uzd" secondAttribute="trailing" constant="18" id="vMo-WU-7k6"/>
+                <constraint firstItem="dqz-pd-cFK" firstAttribute="leading" secondItem="ddO-zV-tCW" secondAttribute="leading" constant="20" id="vTM-bq-QEv"/>
+                <constraint firstItem="BtV-9B-fup" firstAttribute="top" secondItem="ddO-zV-tCW" secondAttribute="top" constant="20" id="w6X-3o-CrF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ddO-zV-tCW"/>
+            <point key="canvasLocation" x="-396" y="101.19940029985008"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Geru022" width="1280" height="960"/>
+        <image name="Geru14" width="1280" height="960"/>
+        <image name="Geru8" width="3024" height="3024"/>
+    </resources>
+</document>
